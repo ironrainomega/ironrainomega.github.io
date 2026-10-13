@@ -1,56 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tamas H.</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .container {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        h1 {
-            color: #333;
-            margin-bottom: 20px;
-        }
-        .profile-image {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin-bottom: 20px;
-            object-fit: cover;
-        }
-        .link {
-            display: block;
-            padding: 10px;
-            margin: 10px 0;
-            background-color: #e7e7e7;
-            color: #333;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        .link:hover {
-            background-color: #d0d0d0;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tamas Henning</title>
+<link rel="icon" href="TH_logo01_Flat.png">
+<style>
+:root{color-scheme:light dark;--fg:#111;--bg:#fafafa;--blob:#dedee2}
+@media(prefers-color-scheme:dark){:root{--fg:#eee;--bg:#0e0e10;--blob:#26262b}}
+html,body{margin:0;overflow-x:hidden}
+body{min-height:100vh;min-height:100svh;display:grid;place-items:center;text-align:center;padding:24px;box-sizing:border-box;font:clamp(16px,2.2vw,18px)/1.5 system-ui,sans-serif;color:var(--fg);background:var(--bg)}
+.bg{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
+.bg i{position:absolute;width:55vmax;height:55vmax;left:calc(50% - 27.5vmax);top:calc(50% - 27.5vmax);border-radius:50%;background:var(--blob);filter:blur(70px);opacity:.7;will-change:transform;animation:p1 29s ease-in-out infinite alternate}
+.bg i:nth-child(2){width:40vmax;height:40vmax;animation:p2 37s ease-in-out -11s infinite alternate-reverse}
+.bg i:nth-child(3){width:48vmax;height:48vmax;animation:p3 43s ease-in-out -23s infinite alternate}
+.bg i:nth-child(4){width:34vmax;height:34vmax;animation:p4 53s ease-in-out -7s infinite alternate-reverse}
+@keyframes p1{0%{transform:translate(-40vw,-35vh)}30%{transform:translate(25vw,-20vh) scale(1.1)}55%{transform:translate(35vw,30vh)}80%{transform:translate(-15vw,25vh) scale(.9)}100%{transform:translate(-30vw,5vh)}}
+@keyframes p2{0%{transform:translate(40vw,35vh)}25%{transform:translate(-10vw,30vh) scale(1.2)}50%{transform:translate(-40vw,-10vh)}75%{transform:translate(5vw,-35vh) scale(.85)}100%{transform:translate(35vw,-5vh)}}
+@keyframes p3{0%{transform:translate(20vw,-40vh) scale(.9)}35%{transform:translate(-35vw,-5vh)}60%{transform:translate(-5vw,40vh) scale(1.15)}100%{transform:translate(40vw,10vh)}}
+@keyframes p4{0%{transform:translate(-35vw,40vh)}20%{transform:translate(10vw,10vh) scale(1.2)}45%{transform:translate(40vw,-30vh)}70%{transform:translate(-20vw,-40vh) scale(.9)}100%{transform:translate(-40vw,0)}}
+img{width:clamp(44px,8vw,56px);height:auto}
+h1{margin:clamp(12px,2vw,16px) 0 8px;font-size:clamp(1.5rem,5vw,2rem);letter-spacing:-.02em}
+a{color:inherit;display:inline-block;padding:12px 16px;text-underline-offset:4px}
+main>*{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+h1{animation-delay:.15s}a{animation-delay:.3s}
+@keyframes rise{from{opacity:0;transform:translateY(12px)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
 </head>
 <body>
-    <div class="container">
-        <img src="TH_logo01_Flat.png" alt="Profile Image" class="profile-image">
-        <!-- Add more social links as needed -->
-    </div>
+<div class="bg" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+<main>
+  <img src="TH_logo01_Flat.png" alt="TH">
+  <h1>Tamas Henning</h1>
+  <a href="https://www.linkedin.com/in/tamashenning/">LinkedIn</a>
+</main>
 </body>
 </html>
