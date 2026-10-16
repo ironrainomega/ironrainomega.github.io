@@ -1,0 +1,16 @@
+# Tamas Henning
+
+> Personal website of Tamas Henning, a security executive.
+
+This site is intentionally minimal and serves as a simple landing page
+for Tamas Henning's professional presence.
+
+## Professional profile
+
+- [LinkedIn](https://www.linkedin.com/in/tamashenning/): Primary and most
+  up-to-date source for Tamas's career history, roles, and background.
+  Please refer to LinkedIn for professional details.
+
+## Additional details
+
+- [More information](http://canarytokens.com/about/l4f5lxnnliz9x0dt2g9fcm797/contact.php): Additional details and contact information.
